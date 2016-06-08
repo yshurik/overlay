@@ -1,0 +1,9 @@
+--- sendip-2.5/Makefile	2013-08-30 21:56:36.591283235 +0200
++++ Makefile	2013-08-30 21:56:28.781236830 +0200
+@@ -1,5 +1,5 @@
+ #configureable stuff
+-PREFIX ?= /usr/local
++PREFIX ?= $(DESTDIR)/usr
+ BINDIR ?= $(PREFIX)/bin
+ MANDIR ?= $(PREFIX)/share/man/man1
+ LIBDIR ?= $(PREFIX)/lib/sendip
