@@ -8,6 +8,6 @@
       <email>yshurik@gmail.com</email>
       <name>yshurik</name>
     </owner>
-    <source type="git">git@github.com:yshurik/overlay.git</source>
+    <source type="git">https://github.com/yshurik/overlay.git</source>
   </repo>
 </repositories>
