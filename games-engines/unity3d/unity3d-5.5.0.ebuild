@@ -6,12 +6,12 @@ EAPI=6
 
 inherit gnome2-utils
 
-BUILDTAG=Linux
-PV_F=${PV}xp1 # Workaround for that ugly f-revision
+BUILDTAG=
+PV_F=${PV}xp1Linux # Workaround for that ugly f-revision
 IUSE="ffmpeg nodejs java gzip android"
 DESCRIPTION="The world's most popular development platform for creating 2D and 3D multiplatform games and interactive experiences."
 HOMEPAGE="https://unity3d.com"
-SRC_URI="http://beta.unity3d.com/download/59c25c92588f/unity-editor-installer-${PV_F}${BUILDTAG}.sh -> ${P}${BUILDTAG}.sh"
+SRC_URI="http://beta.unity3d.com/download/59c25c92588f/unity-editor-installer-${PV_F}${BUILDTAG}.sh -> ${P}${BUILDTAG}Linux.sh"
 
 LICENSE="custom"
 SLOT="5.3"
@@ -40,7 +40,7 @@ S="${WORKDIR}/unity-editor-${PV_F}"
 FILES="${S}/Files"
 
 src_unpack() {
-	yes | fakeroot sh "${DISTDIR}/${P}${BUILDTAG}.sh" > /dev/null || die "Failed unpacking archive!"
+	yes | fakeroot sh "${DISTDIR}/${P}${BUILDTAG}Linux.sh" > /dev/null || die "Failed unpacking archive!"
 }
 
 src_prepare() {
