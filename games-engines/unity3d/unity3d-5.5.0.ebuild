@@ -40,7 +40,7 @@ S="${WORKDIR}/unity-editor-${PV_F}"
 FILES="${S}/Files"
 
 src_unpack() {
-	yes | fakeroot sh "${DISTDIR}/${P}+${BUILDTAG}.sh" > /dev/null || die "Failed unpacking archive!"
+	yes | fakeroot sh "${DISTDIR}/${P}${BUILDTAG}.sh" > /dev/null || die "Failed unpacking archive!"
 }
 
 src_prepare() {
